@@ -756,7 +756,7 @@ Azure Dragon,Neutral,7,50,50,70,80,1000,19,1,78845,30000,"Mercury,20","Dragon,Fl
         }
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/calculate-damage', {
+            const response = await fetch('https://heroes3-damage-calculator-python.onrender.com/calculate-damage', {
                 method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(params),
             });
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
